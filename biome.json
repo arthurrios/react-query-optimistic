@@ -1,0 +1,10 @@
+{
+  "extends": ["@arthurrios/biome-config/react"],
+  "linter": {
+    "rules": {
+      "a11y": {
+        "useButtonType": "off"
+      }
+    }
+  }
+}

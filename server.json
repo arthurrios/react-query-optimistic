@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "123",
+      "name": "Rodrigo Gonçalves",
+      "username": "orodrigogo",
+      "blocked": true
+    },
+    {
+      "id": "124",
+      "name": "Diego Fernandes",
+      "username": "diego3g",
+      "blocked": true
+    },
+    {
+      "id": "125",
+      "name": "Mayk Brito",
+      "username": "maykbrito",
+      "blocked": true
+    },
+    {
+      "id": "126",
+      "name": "Arthur Rios",
+      "username": "arthurrios",
+      "blocked": false
+    }
+  ]
+}
