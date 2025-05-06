@@ -4,7 +4,7 @@
       "id": "123",
       "name": "Rodrigo Gonçalves",
       "username": "orodrigogo",
-      "blocked": false
+      "blocked": true
     },
     {
       "id": "124",
@@ -16,10 +16,10 @@
       "id": "125",
       "name": "Mayk Brito",
       "username": "maykbrito",
-      "blocked": false
+      "blocked": true
     },
     {
-      "id": "cbbb",
+      "id": "846c",
       "blocked": false,
       "name": "Arthur Rios",
       "username": "arthurrios"

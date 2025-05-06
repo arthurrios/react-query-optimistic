@@ -2,6 +2,9 @@
   "extends": ["@arthurrios/biome-config/react"],
   "linter": {
     "rules": {
+      "style": {
+        "useNumberNamespace": "off"
+      },
       "a11y": {
         "useButtonType": "off"
       }
