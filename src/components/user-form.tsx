@@ -10,15 +10,16 @@ export function UserForm() {
 
   const { createUser, isLoading } = useCreateUser()
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
     event.preventDefault()
 
     try {
-      createUser({ name, username, blocked: false })
+      setName('')
+      setUsername('')
 
-      toast.success('User created successfully!')
+      await createUser({ name, username, blocked: false })
     } catch {
-      toast.error('Something went wrong!')
+      toast.error('Error creating user!')
     }
   }
 
