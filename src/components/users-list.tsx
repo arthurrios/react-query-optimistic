@@ -1,32 +1,25 @@
+import { useUsers } from '@/hooks/useUsers'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { Switch } from './ui/switch'
-
-const users = [
-  {
-    id: Math.random(),
-    name: 'Rodrigo Gonçalves',
-    username: 'orodrigogo',
-  },
-  {
-    id: Math.random(),
-    name: 'Diego Fernandes',
-    username: 'diego3g',
-  },
-  {
-    id: Math.random(),
-    name: 'Mayk Brito',
-    username: 'maykbrito',
-  },
-  {
-    id: Math.random(),
-    name: 'Arthur Rios',
-    username: 'arthurrios',
-  },
-]
+import { Skeleton } from './ui/skeleton'
+import { useUpdateUser } from '@/hooks/useUpdateUser'
 
 export function UsersList() {
+  const { users, isLoading } = useUsers()
+  const { updateUser } = useUpdateUser()
+
+  async function handleBlockedChange(id: string, blocked: boolean) {
+    await updateUser({ id, blocked })
+  }
   return (
     <div className="space-y-4">
+      {isLoading && (
+        <>
+          <Skeleton className="h-[74px]" />
+          <Skeleton className="h-[74px]" />
+          <Skeleton className="h-[74px]" />
+        </>
+      )}
       {users.map((user) => {
         const userInitials = user.name
           .split(' ')
@@ -51,7 +44,12 @@ export function UsersList() {
               </div>
             </div>
 
-            <Switch />
+            <Switch
+              checked={user.blocked}
+              onCheckedChange={(blocked) =>
+                handleBlockedChange(user.id, blocked)
+              }
+            />
           </div>
         )
       })}

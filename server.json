@@ -4,25 +4,25 @@
       "id": "123",
       "name": "Rodrigo Gonçalves",
       "username": "orodrigogo",
-      "blocked": true
+      "blocked": false
     },
     {
       "id": "124",
       "name": "Diego Fernandes",
       "username": "diego3g",
-      "blocked": true
+      "blocked": false
     },
     {
       "id": "125",
       "name": "Mayk Brito",
       "username": "maykbrito",
-      "blocked": true
+      "blocked": false
     },
     {
-      "id": "126",
+      "id": "cbbb",
+      "blocked": false,
       "name": "Arthur Rios",
-      "username": "arthurrios",
-      "blocked": false
+      "username": "arthurrios"
     }
   ]
 }
