@@ -17,6 +17,12 @@
       "name": "Mayk Brito",
       "username": "maykbrito",
       "blocked": true
+    },
+    {
+      "id": "85ea",
+      "blocked": false,
+      "name": "Arthur Rios",
+      "username": "arthurrios"
     }
   ]
 }
